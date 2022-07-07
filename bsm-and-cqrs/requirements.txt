@@ -2,3 +2,4 @@ SQLAlchemy
 jupyterlab
 pandas
 seaborn
+eventsourcing
