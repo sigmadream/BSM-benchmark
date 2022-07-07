@@ -1,0 +1,4 @@
+SQLAlchemy
+jupyterlab
+pandas
+seaborn
