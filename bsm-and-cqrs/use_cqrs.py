@@ -159,14 +159,14 @@ class BSMLogger(Application):
         self.save(bsm)
         return bsm.id
 
-    # def add_bsm(self, bsm_id, bsm):
-    #     bsm = self.repository.get(bsm_id)
-    #     bsm.add_bsm(bsm=bsm)
-    #     self.save(bsm)
-    #
-    # def get_bsm(self, bsm_id):
-    #     bsm = self.repository.get(bsm_id)
-    #     return {'name': bsm.metadata_generatedBy, 'tricks': tuple(bsm)}
+    def add_bsm(self, bsm_id):
+        bsm = self.repository.get(bsm_id)
+        bsm.add_bsm(bsm=bsm)
+        self.save(bsm)
+
+    def get_bsm(self, bsm_id):
+        bsm = self.repository.get(bsm_id)
+        return {'name': bsm.metadata_generatedBy, 'tricks': tuple(bsm)}
 
 
 if __name__ == '__main__':
